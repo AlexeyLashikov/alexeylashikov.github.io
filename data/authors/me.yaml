@@ -45,6 +45,8 @@ skills:
     items:
       - label: Git
         level: 4
+      - label: Hugo
+        level: 4
       - label: Linux
         level: 4
       - label: Python
@@ -54,6 +56,16 @@ skills:
       - label: C++
         level: 2
 
+work:
+  - position: Учебные проекты и лабораторные работы
+    company_name: Российский университет дружбы народов
+    company_url: 'https://www.rudn.ru/'
+    company_logo: 'icons/custom/Logo-rudn.png'
+    date_start: '2025-09-01'
+    date_end: '2029-09-01'
+    summary: |
+      Выполнение учебных проектов и лабораторных работ, связанных с программированием, веб-разработкой и системами контроля версий.
+
 languages:
   - name: Русский
     level: 5
@@ -62,4 +74,22 @@ languages:
     level: 3
     label: Intermediate
 
-awards: []
+awards:
+  - title: IYIA 2023
+    url: 'https://www.technopol-gr.com/news/IID-2023-results-ru/'
+    date: '19.09.23'
+    icon: trophy
+    summary: |
+      Алексей Лащиков, Дмитрий Набиулин, Дмитрий Торопов (г. Новочеркасск, ЦТТ Robo.Grade): Серебряная медаль, а также Специальный приз за творческий подход и значимое изобретение (Универсальный робот-разведчик Mecanum link snake);
+  - title: Powertech 2023
+    url: 'https://www.technopol-gr.com/news/powertech-2023/'
+    date: '16.12.23'
+    icon: trophy
+    summary: |
+      1 место в PowerTech STEAM-Star International (Overseas) Invitational Contest, который проводился Тайваньским национальным педагогическим университетом 16-17 декабря 2023 года в г. Тайбэй (о. Тайвань).
+  - title: Powertech 2024
+    url: 'http://sut-norilsk.ru/%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B8-powertech-2024-%D0%B2%D0%B5%D1%80%D0%BD%D1%83%D0%BB%D0%B8%D1%81%D1%8C-%D1%81%D0%BE-%D1%89%D0%B8%D1%82%D0%BE%D0%BC/'
+    date: '18.12.24'
+    icon: trophy
+    summary: |
+      3 место в PowerTech STEAM-Star International (Overseas) Invitational Contest, который проводился Тайваньским национальным педагогическим университетом 17-18 декабря 2024 года в г. Тайбэй (о. Тайвань).
