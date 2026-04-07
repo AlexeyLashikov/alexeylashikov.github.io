@@ -27,6 +27,28 @@ links:
     label: E-mail
   - icon: brands/github
     url: https://github.com/AlexeyLashikov
+    label: GitHub
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?view_op=list_works&hl=ru&user=0DR_ueQAAAAJ
+    label: Google Scholar
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0000-8616-0387
+    label: ORCID
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/profile/Alexey-Lashikov?ev=hdr_xprf
+    label: ResearchGate
+  - icon: academicons/mendeley
+    url: https://www.mendeley.com/reference-manager/library/all-references/
+    label: Mendeley
+  - icon: academicons/arxiv
+    url: https://arxiv.org/
+    label: arXiv
+  - icon: academicons/academia
+    url: https://independent.academia.edu/AlexeyLashikov
+    label: Academia.edu
+  - icon: academicons/elibrary
+    url: https://www.elibrary.ru/project_user_office.asp
+    label: Elibrary
 
 interests:
   - Алгоритмы и программирование
