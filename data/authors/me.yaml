@@ -46,7 +46,7 @@ links:
   - icon: academicons/academia
     url: https://independent.academia.edu/AlexeyLashikov
     label: Academia.edu
-  - icon: academicons/elibrary
+  - icon: book-open
     url: https://www.elibrary.ru/project_user_office.asp
     label: Elibrary
 
