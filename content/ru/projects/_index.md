@@ -11,7 +11,7 @@ design:
 sections:
   - block: collection
     content:
-      title: Избранные проекты
+      title: Проекты
       text: Здесь представлены мои учебные и персональные проекты.
       filters:
         folders:
