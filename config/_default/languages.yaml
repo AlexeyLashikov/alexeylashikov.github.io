@@ -3,8 +3,63 @@
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
 # Default language
+ru:
+  languageCode: ru-RU
+  contentDir: content/ru
+  languageName: Русский
+  title: Алексей Лащиков
+  weight: 1
+  params:
+    description: Персональный сайт Алексея Лащикова
+  menu:
+    main:
+      - name: Обо мне
+        url: /
+        weigth: 10
+      - name: Публикации
+        url: /#papers
+        weight: 11
+      - name: Выступления
+        url: /#talks
+        weight: 13
+      - name: Опыт
+        url: /experience/
+        weight: 20
+      - name: Проекты
+        url: /projects/
+        weight: 30
+      - name: Курсы
+        url: /courses/
+        weight: 40
+
 en:
   languageCode: en-us
+  contentDir: content/en
+  languageName: English
+  title: Alexey Lashikov
+  weight: 2
+  params:
+    description: Personal website of Alexey Lashikov
+  menu:
+    main:
+      - name: Bio
+        url: /
+        weight: 10
+      - name: Papers
+        url: /#papers
+        weight: 11
+      - name: Talks
+        url: /#talks
+        weight: 13
+      - name: Experience
+        url: /experience/
+        weight: 20
+      - name: Projects
+        url: /projects/
+        weight: 30
+      - name: Courses
+        url: /courses/
+        weight: 40
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 

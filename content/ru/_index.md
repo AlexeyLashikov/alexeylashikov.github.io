@@ -20,9 +20,9 @@ sections:
         text: Download CV
         url: uploads/resume.pdf
       headings:
-        about: ''
-        education: ''
-        interests: ''
+        about: 'Обо мне'
+        education: 'Образование'
+        interests: 'Интересы'
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
@@ -39,20 +39,19 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '📚 Моя учебная деятельность'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        На этом сайте собраны сведения обо мне, моих проектах, учебной деятельности и публикациях.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+        Здесь размещены персональные проекты, новости по этапам работы и материалы, связанные с обучением и программированием.
     design:
       columns: '1'
+
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: Избранные публикации
       filters:
         folders:
           - publications
@@ -62,7 +61,7 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: Recent Publications
+      title: Последние публикации
       text: ''
       filters:
         folders:
@@ -73,16 +72,17 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Recent & Upcoming Talks
+      title: Последние и будущие выступления
       filters:
         folders:
           - events
     design:
       view: card
+
   - block: collection
     id: news
     content:
-      title: Recent News
+      title: Последние новости
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
