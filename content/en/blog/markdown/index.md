@@ -2,28 +2,28 @@
 title: "Markdown"
 date: 2026-04-02T13:50:32+03:00
 draft: false
-summary: "Кратко о языке разметки Markdown и его использовании."
+summary: "A short note about the Markdown markup language and how it is used."
 authors:
-    - me
+  - me-en
 ---
 
 # Markdown
 
-Markdown --- это легковесный язык разметки, предназначенный для удобного оформления текста.
+Markdown is a lightweight markup language designed for convenient text formatting.
 
-Его основное приемущество состоит в том, что он позволяет быстро создавать структурированные документы с загаловками, списками, ссылками, изображениями и фрагментами кода без использования сложных редакторов.
+Its main advantage is that it makes it easy to create structured documents with headings, lists, links, images, and code fragments without using complex editors.
 
-# Области применения и приемущества
+# Use Cases and Advantages
 
-Markdown широко применяется при подготовке README-файлов, документаций, отчётов и страниц статических сайтов. В данном проекте он используется для создания новостных записей и наполнения персонального сайта.
+Markdown is widely used for README files, documentation, reports, and pages for static websites. In this project, it is used to create blog posts and fill the personal website with content.
 
-Приемущества Markdown:
+Advantages of Markdown:
 
-- простой и понятный синтаксис;
-- удобство редактирования;
-- хорошая совместимость с Git;
-- возможность преобразования в HTML и другие форматы.
+- simple and readable syntax;
+- convenient editing;
+- good compatibility with Git;
+- conversion to HTML and other formats.
 
-# Заключение
+# Conclusion
 
-Таким образом, Markdown является удобным инструментом для подготовки учебных и технических материалов.
+Markdown is a convenient tool for preparing educational and technical materials.

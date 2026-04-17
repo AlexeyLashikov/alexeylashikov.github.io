@@ -24,20 +24,20 @@ sections:
   - block: resume-experience
     content:
       title: Experience
-      username: me
+      username: me-en
 
   - block: resume-skills
     content:
       title: Skills
-      username: me
+      username: me-en
 
   - block: resume-awards
     content:
       title: Achievements
-      username: me
+      username: me-en
 
   - block: resume-languages
     content:
       title: Languages
-      username: me
+      username: me-en
 ---

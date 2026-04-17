@@ -1,23 +1,24 @@
 ---
-title: "Персональный сайт"
+title: "Personal Website"
 date: 2026-04-07T21:12:08+03:00
-summary: "Проект по разработке и размещению персонального сайта на GitHub Pages."
+summary: "A project for developing and publishing a personal website on GitHub Pages."
 draft: false
 authors:
-    - me
+  - me-en
 tags:
-    - hugo
-    - github
-    - website
+  - hugo
+  - github
+  - website
 ---
 
-Данный проект посвящён разработке персонального сайта на основе генератора статических сайтов Hugo.
+This project is dedicated to building a personal website with the Hugo static site generator.
 
-В ходе выполнения проекта были решены следующие задачи:
-- установка и настройка программного обеспечения;
-- развёртывание шаблона сайта;
-- настройка GitHub Pages;
-- наполнение сайта персональными данными;
-- добавление раздедов с навыками, опытом и достижениями.
+The work included:
 
-Проект используется как часть индивидуальной учебной работы.
+- installing and configuring the required software;
+- deploying the website template;
+- configuring GitHub Pages;
+- adding personal information;
+- creating sections for skills, experience, projects, and achievements.
+
+The project is used as part of individual coursework.

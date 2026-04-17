@@ -1,22 +1,23 @@
 ---
-title: "Пост по прошедшей неделе"
+title: "Weekly Summary"
 date: 2026-04-07T13:44:19+03:00
 draft: false
-summary: "Краткий обзор того, что было сделано мной за неделю."
+summary: "A short overview of what I worked on during the week."
 authors:
-    - me
+  - me-en
 tags:
-    - week
-    - website
+  - week
+  - study
 ---
 
-На прошедшей неделе была продолжена работа над персональным сайтом.
+This week I focused on expanding the website content and improving the structure of the project.
 
-Были выполнены следующие действие:
+Completed tasks:
 
-- добавлены ссылки на науные и библиографические ресурсы;
-- подготовлены записи о персональных проектах;
-- начата настройка двуязычной версии сайта;
-- проведена проверка отображения контента на главной странице.
+- added new posts about academic and technical topics;
+- updated project pages;
+- checked links and navigation;
+- continued working with Git and GitHub Pages;
+- prepared materials for the bilingual version of the website.
 
-В результате сайт стал более полным и информативным.
+The result is a more complete and organized personal website.

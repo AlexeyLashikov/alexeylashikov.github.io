@@ -1,20 +1,21 @@
 ---
-title: "Работа с библиографией"
+title: "Working with Bibliography"
 date: 2026-04-07T20:55:17+03:00
 draft: false
 authors:
-    - me
+  - me-en
 tags:
-    - bibliography
-    - science
-    - writing
+  - bibliography
+  - science
+  - writing
 ---
 
-Библиография является важной частью учебной и научной работы.
+Bibliography is an important part of academic and research work.
 
-Корректное оформление списка источников позволяет:
-- показывать, на какие материалы опирается автор;
-- подтвердить достоверность приведённых сведений;
-- упростить проверку и дальнейшее изучение темы.
+A properly prepared list of sources helps to:
 
-Для работы с библиографией используются библиографические менеджеры, электронные каталоги и научные базы данных.
+- show which materials the author used;
+- confirm the reliability of the information;
+- make it easier to check and continue studying the topic.
+
+Bibliographic managers, electronic catalogs, and academic databases are commonly used to work with references.

@@ -1,616 +1,616 @@
 ---
-title: "Прохождение внешнего курса"
+title: "External Course Completion"
 date: 2026-04-15T10:17:50+03:00
-summary: "В публикации собраны результаты прохождения внешнего курса «Введение в Linux». Материал объединяет три этапа обучения: освоение базовых команд и работы с терминалом, изучение удалённых серверов и tmux, а также более продвинутых тем — vim, bash-скриптов, find, grep, sed, gnuplot и управления правами доступа."
+summary: "This publication contains the results of completing the external course Introduction to Linux. The material combines three learning stages: mastering basic commands and terminal work, studying remote servers and tmux, and more advanced topics such as vim, Bash scripts, find, grep, sed, gnuplot, and access permissions."
 draft: false
 authors:
-  - me
+  - me-en
 tags:
   - linux
   - external-course
   - study
 ---
 
-# Прохождение внешнего курса
+# External Course Completion
 
-В данном материале собраны результаты прохождения внешнего курса «Введение в Linux». В ходе выполнения заданий были последовательно изучены базовые и более продвинутые возможности операционной системы Linux: работа с терминалом, файлами и каталогами, стандартными потоками ввода и вывода, удалёнными серверами, многопоточными приложениями, менеджером терминалов `tmux`, редактором `vim`, `bash`-скриптами, утилитами поиска и обработки текста, а также средствами управления правами доступа.
+This material contains the results of completing the external course "Introduction to Linux". While completing the assignments, I consistently studied basic and more advanced features of the Linux operating system: working with the terminal, files and directories, standard input and output streams, remote servers, multithreaded applications, the `tmux` terminal manager, the `vim` editor, `bash` scripts, search and text-processing utilities, and tools for managing access permissions.
 
-# Этап 1. Введение
+# Stage 1. Introduction
 
-## Общая информация о курсе
+## General Course Information
 
-Указал название курса — «Введение в Linux».
+I specified the course title, "Introduction to Linux".
 
-![Выбор названия курса](image-1/1.png)
+![Selecting the course title](image-1/1.png)
 
-В задании нужно было выбрать название курса из предложенных вариантов, что и было сделано.
+The task required choosing the course title from the provided options, which I did.
 
-Прочитал условия прохождения курса и отметил все верные утверждения.
+I read the course completion rules and selected all correct statements.
 
-![Выбор утверждений о прохождении курса](image-1/2.png)
+![Selecting statements about course completion](image-1/2.png)
 
-Были отмечены пункты о самостоятельном выполнении заданий, недопустимости публикации решений и отсутствии дедлайнов.
+I selected the statements about completing assignments independently, the prohibition on publishing solutions, and the absence of deadlines.
 
-## Как установить Linux
+## How to Install Linux
 
-Указал, какие операционные системы обычно использую, отметил варианты «Linux» и «Windows».
+I indicated which operating systems I usually use and selected "Linux" and "Windows".
 
-![Выбор используемых операционных систем](image-1/3.png)
+![Selecting the operating systems used](image-1/3.png)
 
-В задании требовалось выбрать все подходящие варианты ответа о том, какие операционные системы используются мной обычно. Были отмечены варианты «Linux» и «Windows».
+The task required selecting all suitable answers about which operating systems I usually use. I selected "Linux" and "Windows".
 
-Указал, что виртуальная машина — это специальная программа для запуска одной операционной системы внутри другой.
+I indicated that a virtual machine is a special program for running one operating system inside another.
 
-![Выбор ответа о виртуальной машине](image-1/4.png)
+![Selecting the answer about a virtual machine](image-1/4.png)
 
-В задании требовалось выбрать один правильный вариант ответа о том, что такое виртуальная машина. Был выбран вариант о запуске одной ОС на другой ОС.
+The task required choosing one correct answer about what a virtual machine is. I selected the option about running one OS on another OS.
 
-Подтвердил факт запуска Linux на компьютере.
+I confirmed that Linux had been launched on the computer.
 
-![Ответ на вопрос о запуске Linux](image-1/5.png)
+![Answer to the question about launching Linux](image-1/5.png)
 
-В задании требовалось подтвердить факт запуска Linux на компьютере. Так как система у меня уже давно была успешно запущена, был выбран вариант «Да».
+The task required confirming that Linux had been launched on the computer. Since the system had already been successfully launched on my computer for a long time, I selected "Yes".
 
-## Осваиваем Linux
+## Getting Started with Linux
 
-Создал текстовый документ в LibreOffice Writer, ввёл строку `Hello, Linux!`, сохранил файл в подходящем формате и загрузил его в систему.
+I created a text document in LibreOffice Writer, entered the line `Hello, Linux!`, saved the file in the required format, and uploaded it to the system.
 
-![Выполнение задания с созданием и загрузкой документа](image-1/6.png)
+![Completing the task with document creation and upload](image-1/6.png)
 
-![Загрузка файла на платформу](image-1/7.png)
+![Uploading the file to the platform](image-1/7.png)
 
-Для выполнения задания был подготовлен документ со строкой `Hello, Linux!`, после чего он был сохранён в нужном формате и успешно загружен, что подтверждается зачётом решения.
+To complete the task, I prepared a document containing the line `Hello, Linux!`, saved it in the required format, and uploaded it successfully, which was confirmed by the accepted solution.
 
-Указал, что установочные пакеты в Ubuntu имеют расширение `deb`.
+I indicated that Ubuntu installation packages have the `deb` extension.
 
-![Выбор расширения установочных пакетов в Ubuntu](image-1/8.png)
+![Selecting the extension of Ubuntu installation packages](image-1/8.png)
 
-В задании требовалось выбрать расширение установочных пакетов, используемых в Ubuntu. Были рассмотрены предложенные варианты: `exe` относится в основном к Windows, `dmg` — к macOS, а `txt` и `ubuntu` не являются форматами установочных пакетов. Поэтому был выбран вариант `deb`, который используется в системах семейства Debian.
+The task required choosing the extension used by installation packages in Ubuntu. I considered the proposed options: `exe` mainly belongs to Windows, `dmg` belongs to macOS, and `txt` and `ubuntu` are not installation package formats. Therefore, I selected `deb`, which is used in Debian-family systems.
 
-Установил медиаплеер VLC, открыл окно с информацией о программе и определил первую фамилию во вкладке Authors, после чего ввёл ответ в систему.
+I installed the VLC media player, opened the window with information about the program, found the first surname in the Authors tab, and entered the answer into the system.
 
-![Просмотр информации о VLC и списка авторов](image-1/9.png)
+![Viewing VLC information and the author list](image-1/9.png)
 
-![Ввод ответа на платформе](image-1/10.png)
+![Entering the answer on the platform](image-1/10.png)
 
-В задании требовалось установить VLC, открыть раздел `Help → About` и посмотреть вкладку Authors. Так как в списке авторов сначала указано имя, а затем фамилия, была определена первая фамилия — `Denis-Courmont`, после чего этот ответ был введён в поле на платформе и засчитан системой.
+The task required installing VLC, opening `Help -> About`, and viewing the Authors tab. Since the author list first shows a first name and then a surname, I identified the first surname, `Denis-Courmont`, entered it into the platform field, and the system accepted the answer.
 
-Указал, что приложение Update Manager можно использовать для обновления ссылок в Software Center, обновления установленного программного обеспечения и обновления системы до новой версии.
+I indicated that Update Manager can be used to update Software Center links, update installed software, and upgrade the system to a new version.
 
-![Выбор вариантов ответа о назначении Update Manager](image-1/11.png)
+![Selecting answers about the purpose of Update Manager](image-1/11.png)
 
-В задании требовалось отметить все подходящие варианты использования Update Manager. Были исключены пункты про установку и удаление программ, так как для этого обычно используются другие средства управления пакетами. Остальные варианты связаны именно с обновлением системы и программ, поэтому они и были выбраны.
+The task required selecting all suitable uses of Update Manager. I excluded the options about installing and removing programs, because other package-management tools are usually used for that. The remaining options were related to updating the system and programs, so I selected them.
 
-## Terminal: основы
+## Terminal: Basics
 
-Отметил, что синонимами командной строки являются «Терминал» и «Консоль».
+I noted that "Terminal" and "Console" are synonyms for the command line.
 
-![Выбор синонимов для командной строки](image-1/12.png)
+![Selecting synonyms for the command line](image-1/12.png)
 
-В задании требовалось выбрать все подходящие названия командной строки. Варианты «Ассоль» и «Термин» не относятся к работе в Linux, поэтому они были исключены. Подходящими вариантами являются «Терминал» и «Консоль», так как именно этими словами обычно называют интерфейс для ввода команд.
+The task required selecting all suitable names for the command line. The options "Assol" and "Termin" are not related to Linux work, so I excluded them. The suitable options are "Terminal" and "Console", because these words are commonly used for the interface where commands are entered.
 
-Указал, что текущую директорию выводит команда `pwd`.
+I indicated that the `pwd` command prints the current directory.
 
-![Выбор команды для вывода текущей директории](image-1/13.png)
+![Selecting the command for printing the current directory](image-1/13.png)
 
-В задании требовалось выбрать правильное написание команды, которая показывает, в какой директории находится пользователь. В Linux имена команд чувствительны к регистру, поэтому варианты `Pwd` и `PWD` не подходят. По этой причине был выбран вариант `pwd`.
+The task required choosing the correct spelling of the command that shows which directory the user is in. In Linux, command names are case-sensitive, so `Pwd` and `PWD` are not suitable. For this reason, I selected `pwd`.
 
-Указал, что команде `ls -A --human-readable -l /some/directory` полностью эквивалентна команда `ls -lAh /some/directory`.
+I indicated that the command `ls -A --human-readable -l /some/directory` is fully equivalent to `ls -lAh /some/directory`.
 
-![Выбор эквивалентной команды ls](image-1/14.png)
+![Selecting the equivalent ls command](image-1/14.png)
 
-В задании требовалось найти полную эквивалентную запись команды `ls` с теми же параметрами. Для этого нужно было сопоставить длинные и короткие опции: `-A` соответствует выводу почти всех файлов без `.` и `..`, `--human-readable` соответствует ключу `-h`, а `-l` — длинному формату вывода. По этой причине был выбран вариант `ls -lAh /some/directory`, так как он содержит тот же набор параметров, только в сокращённой форме.
+The task required finding the fully equivalent form of the `ls` command with the same parameters. I matched the long and short options: `-A` prints almost all files except `.` and `..`, `--human-readable` corresponds to `-h`, and `-l` enables long listing format. Therefore, I selected `ls -lAh /some/directory`, because it contains the same set of options in short form.
 
-Указал, что содержимое каталога `/home/bi/Downloads` в данной ситуации можно вывести командами `ls ../Downloads` и `ls ~/Downloads`.
+I indicated that the contents of `/home/bi/Downloads` can be printed with `ls ../Downloads` and `ls ~/Downloads` in the given situation.
 
-![Выбор команд для просмотра содержимого каталога Downloads](image-1/15.png)
+![Selecting commands for viewing the Downloads directory](image-1/15.png)
 
-В задании требовалось определить команды, которые из каталога `/home/bi/Documents` покажут содержимое `/home/bi/Downloads`, не затрагивая другие директории. Команда `ls ../Downloads` подходит, потому что каталог `Downloads` находится на один уровень выше относительно `Documents`. Команда `ls ~/Downloads` тоже подходит, так как символ `~` указывает на домашнюю директорию `/home/bi`. Вариант `ls Downloads` не подходит, потому что в текущем каталоге `Documents` такой папки нет, а `ls /home/bi/Do*` обращается уже не к каталогу `Downloads`, а к путям, начинающимся на `Do`.
+The task required identifying commands that, from `/home/bi/Documents`, would show the contents of `/home/bi/Downloads` without touching other directories. The command `ls ../Downloads` is suitable because `Downloads` is one level above `Documents`. The command `ls ~/Downloads` is also suitable because `~` points to the home directory `/home/bi`. The option `ls Downloads` is not suitable because there is no such folder in the current `Documents` directory, and `ls /home/bi/Do*` addresses paths that begin with `Do`, not specifically the `Downloads` directory.
 
-Указал, что для удаления директорий используется команда `rm -r`.
+I indicated that directories are removed with the `rm -r` command.
 
-![Выбор команды для удаления директорий](image-1/16.png)
+![Selecting the command for removing directories](image-1/16.png)
 
-В задании требовалось выбрать команду, которая удаляет директории. Вариант `mkdir -r` не подходит, так как `mkdir` используется для создания каталогов, а `mv` — для перемещения и переименования файлов и папок. Вариант `rm -f` предназначен для принудительного удаления файлов, но сам по себе не удаляет директории. Поэтому был выбран вариант `rm -r`, где ключ `-r` означает рекурсивное удаление каталога вместе с его содержимым.
+The task required choosing the command that removes directories. The option `mkdir -r` is not suitable because `mkdir` creates directories, and `mv` moves or renames files and folders. The option `rm -f` is intended for forced file removal, but by itself it does not remove directories. Therefore, I selected `rm -r`, where `-r` means recursive removal of a directory together with its contents.
 
-## Запуск исполняемых файлов
+## Running Executable Files
 
-Указал, что после ввода команд `firefox`, а затем `exit` никто не закроется.
+I indicated that after entering the commands `firefox` and then `exit`, nothing will close.
 
-![Выбор ответа о командах firefox и exit](image-1/17.png)
+![Selecting the answer about firefox and exit](image-1/17.png)
 
-В задании требовалось определить, что произойдёт при запуске Firefox из терминала и последующем вводе команды `exit`. После запуска браузера терминал обычно ожидает завершения этой программы, поэтому команда `exit` сразу не завершает окно терминала и не закрывает Firefox. По этой причине был выбран вариант, что никто не закроется.
+The task required determining what would happen when Firefox is launched from the terminal and `exit` is entered afterward. After launching the browser, the terminal usually waits for that program to finish, so `exit` does not immediately close the terminal window and does not close Firefox. For this reason, I selected the option that nothing will close.
 
-Указал, что запуск программы с символом `&` эквивалентен последовательности: запуск программы, затем `Ctrl+Z`, затем `bg`.
+I indicated that launching a program with `&` is equivalent to the sequence: launch the program, press `Ctrl+Z`, then run `bg`.
 
-![Выбор ответа о запуске программы с символом &](image-1/18.png)
+![Selecting the answer about launching a program with &](image-1/18.png)
 
-В задании требовалось определить, чему соответствует запуск команды с `&`. Такой запуск сразу переводит процесс в фоновый режим. Аналогичного результата можно добиться, если сначала запустить программу обычным способом, затем приостановить её сочетанием `Ctrl+Z`, а после этого продолжить выполнение в фоне командой `bg`. Поэтому был выбран именно этот вариант.
+The task required determining what launching a command with `&` corresponds to. Such a launch immediately puts the process into the background. The same result can be achieved by starting the program normally, suspending it with `Ctrl+Z`, and then continuing it in the background with `bg`. Therefore, I selected that option.
 
-Скачал файл с программой, перешёл в каталог с ним и запустил его, получив на экране дату, время и контрольную сумму. Затем скопировал выведенный текст в форму ответа на платформе.
+I downloaded a program file, moved to its directory, and ran it, receiving the date, time, and checksum on the screen. Then I copied the output into the answer form on the platform.
 
-![Запуск программы в терминале](image-1/19.png)
+![Running the program in the terminal](image-1/19.png)
 
-![Ввод результата работы программы на платформе](image-1/20.png)
+![Entering the program output on the platform](image-1/20.png)
 
-В задании требовалось скачать файл с программой, сделать его исполняемым и запустить. После запуска программа вывела результат в терминал, который затем был перенесён в поле ответа. Совпадение выведенного текста и введённого ответа подтверждает правильное выполнение задания.
+The task required downloading a program file, making it executable, and running it. After launch, the program printed output in the terminal, which I transferred into the answer field. The match between the printed text and the entered answer confirmed that the task was completed correctly.
 
-## Ввод / вывод
+## Input / Output
 
-Указал, что по умолчанию поток ошибок программы, запущенной в терминале, выводится на экран.
+I indicated that by default, the error stream of a program launched in the terminal is displayed on the screen.
 
-![Выбор ответа о выводе потока ошибок](image-1/21.png)
+![Selecting the answer about the error stream output](image-1/21.png)
 
-В задании требовалось определить, куда по умолчанию направляется поток ошибок. Варианты с файлами `stderr` и `err.txt` не подходят, потому что ошибки записываются туда только при специальном перенаправлении. Вариант «Никуда» тоже неверен, так как сообщения об ошибках отображаются пользователю. Поэтому был выбран ответ «На экран».
+The task required determining where the error stream goes by default. The options with files named `stderr` and `err.txt` are not suitable, because errors are written there only when special redirection is used. The option "Nowhere" is also incorrect, because error messages are displayed to the user. Therefore, I selected "On the screen".
 
-Указал, что поток ошибок программы `program` можно записать в файл `file.txt` командами `program 2>> file.txt` и `program 2> file.txt`.
+I indicated that the error stream of the program `program` can be written to `file.txt` with the commands `program 2>> file.txt` and `program 2> file.txt`.
 
-![Выбор команд для перенаправления потока ошибок в файл](image-1/22.png)
+![Selecting commands for redirecting the error stream to a file](image-1/22.png)
 
-В задании требовалось выбрать команды, которые создадут файл `file.txt` и направят в него именно поток ошибок. Обозначение `2>` используется для перенаправления стандартного потока ошибок, а `2>>` — для добавления ошибок в конец файла. Так как в условии сказано, что файла ещё нет, обе команды подходят, потому что в этом случае файл будет создан. Остальные варианты либо работают с обычным выводом, либо относятся к вводу, а не к потоку ошибок.
+The task required selecting commands that would create `file.txt` and send exactly the error stream into it. The notation `2>` is used to redirect the standard error stream, and `2>>` appends errors to the end of the file. Since the condition states that the file does not exist yet, both commands are suitable because the file will be created. The other options either work with normal output or refer to input rather than the error stream.
 
-Указал, что сообщения об ошибках программ в конвейере по умолчанию выводятся на экран.
+I indicated that error messages from programs in a pipeline are displayed on the screen by default.
 
-![Выбор ответа о потоке ошибок в конвейере](image-1/23.png)
+![Selecting the answer about the error stream in a pipeline](image-1/23.png)
 
-В задании требовалось определить, куда попадает поток ошибок `stderr`, если программы соединены через конвейер. Конвейер передаёт дальше только обычный вывод `stdout`, а поток ошибок с ним не объединяется автоматически. Поэтому сообщения об ошибках не исчезают и не записываются сами по себе в отдельный файл, а продолжают выводиться на экран.
+The task required determining where `stderr` goes when programs are connected through a pipeline. A pipeline passes only normal output, `stdout`, further along, while the error stream is not automatically merged with it. Therefore, error messages do not disappear and are not written to a separate file automatically; they continue to be displayed on the screen.
 
-## Скачивание файлов из интернета
+## Downloading Files from the Internet
 
-Указал, что после выполнения этих команд картинка окажется в файле `/home/alex/1.jpg`.
+I indicated that after executing the given commands, the image would be located in `/home/alex/1.jpg`.
 
-![Выбор пути к скачанному файлу](image-1/24.png)
+![Selecting the path to the downloaded file](image-1/24.png)
 
-В задании требовалось определить, куда именно будет сохранён файл. Ключ `-O 1.jpg` задаёт имя выходного файла, а команда `cd /home/alex/` перед этим переводит в домашний каталог пользователя. Поэтому файл сохраняется как `/home/alex/1.jpg`. Ключ `-P /home/alex/Pictures` здесь не влияет на итоговое имя файла, так как оно уже явно задано через `-O`.
+The task required determining exactly where the file would be saved. The option `-O 1.jpg` sets the output filename, and `cd /home/alex/` changes into the user's home directory before that. Therefore, the file is saved as `/home/alex/1.jpg`. The option `-P /home/alex/Pictures` does not affect the final filename here because the name is explicitly specified with `-O`.
 
-Указал, что для отключения всех сообщений на экране в `wget` используется опция `-q` или `--quiet`.
+I indicated that the `-q` or `--quiet` option is used in `wget` to disable all on-screen messages.
 
-![Выбор опции wget для отключения вывода сообщений](image-1/25.png)
+![Selecting the wget option for disabling messages](image-1/25.png)
 
-В задании требовалось выбрать опцию, при которой `wget` не выводит служебные сообщения вроде `Resolving` и `Connecting to`. Вариант `-v` наоборот включает подробный вывод, а `-nv` только уменьшает количество сообщений, но не отключает их полностью. Поэтому был выбран вариант `-q` или `--quiet`, который делает работу команды тихой.
+The task required choosing the option that prevents `wget` from printing service messages such as `Resolving` and `Connecting to`. The option `-v` does the opposite and enables verbose output, while `-nv` only reduces the number of messages but does not disable them completely. Therefore, I selected `-q` or `--quiet`, which makes the command quiet.
 
-Указал, что при запуске `wget -r -l 1 -A jpg` будут скачаны `jpg` и `html` файлы, но все `html` затем будут удалены.
+I indicated that when running `wget -r -l 1 -A jpg`, `jpg` and `html` files will be downloaded, but all `html` files will then be removed.
 
-![Выбор ответа о скачивании файлов через wget](image-1/26.png)
+![Selecting the answer about downloading files with wget](image-1/26.png)
 
-В задании требовалось определить, какие файлы останутся после рекурсивного скачивания страницы с ограничением по расширению. При такой команде `wget` всё равно загружает HTML-страницы, потому что они нужны для перехода по ссылкам, но после завершения работы удаляет их, если они не подходят под условие `-A jpg`. Поэтому в итоге остаются только `jpg`-файлы, а `html`-файлы скачиваются временно и затем удаляются.
+The task required determining which files remain after recursively downloading a page with an extension restriction. With this command, `wget` still downloads HTML pages because they are needed to follow links, but after completion it removes them if they do not satisfy the `-A jpg` condition. Therefore, only `jpg` files remain in the end, while `html` files are downloaded temporarily and then deleted.
 
-## Работа с архивами
+## Working with Archives
 
-Указал, что `gzip` удаляет архив после его распаковки.
+I indicated that `gzip` removes an archive after extracting it.
 
-![Выбор ответа о различии между gzip и zip](image-1/27.png)
+![Selecting the answer about the difference between gzip and zip](image-1/27.png)
 
-В задании требовалось определить различие между `gzip` и `zip` при использовании без дополнительных опций. Варианты про степень сжатия не подходят, потому что это зависит от данных и не является главным отличием в таком вопросе. Также неверно, что `zip` удаляет архив после распаковки. Особенность `gzip` в том, что при обычной распаковке исходный `.gz`-файл удаляется, поэтому был выбран именно этот вариант.
+The task required identifying the difference between `gzip` and `zip` when used without additional options. The options about compression ratio are not suitable, because that depends on the data and is not the main difference in this question. It is also incorrect that `zip` removes the archive after extraction. The feature of `gzip` is that during normal extraction the source `.gz` file is removed, so I selected that option.
 
-Указал, что архив из директории с файлами могут создать программы `zip` и `tar`.
+I indicated that `zip` and `tar` can create an archive from a directory with files.
 
-![Выбор архиваторов для создания архива из директории](image-1/28.png)
+![Selecting archivers for creating an archive from a directory](image-1/28.png)
 
-В задании требовалось отметить программы, которые умеют упаковывать директорию целиком. `zip` и `tar` подходят, потому что используются для создания архивов с каталогами и их содержимым. `gzip` не подходит, так как сам по себе обычно сжимает отдельный файл, а не создаёт архив из директории.
+The task required selecting programs that can pack an entire directory. `zip` and `tar` are suitable because they are used to create archives containing directories and their contents. `gzip` is not suitable because by itself it usually compresses a single file rather than creating an archive from a directory.
 
-Указал, что для создания архива `my_archive.tar.bz2` в `tar` нужно использовать набор опций `-cjf`.
+I indicated that to create the archive `my_archive.tar.bz2` with `tar`, the option set `-cjf` should be used.
 
-![Выбор опций tar для создания архива tar.bz2](image-1/29.png)
+![Selecting tar options for creating a tar.bz2 archive](image-1/29.png)
 
-В задании требовалось выбрать опции для упаковки файлов в архив формата `tar.bz2`. Ключ `c` означает создание нового архива, `j` — сжатие через `bzip2`, а `f` — указание имени файла архива. Остальные варианты не подходят, потому что `z` используется для `gzip`, а `x` — для распаковки, а не для создания архива.
+The task required choosing options for packing files into a `tar.bz2` archive. The key `c` means creating a new archive, `j` means compression with `bzip2`, and `f` means specifying the archive filename. The other options are not suitable because `z` is used for `gzip`, and `x` is for extraction rather than archive creation.
 
-## Поиск файлов и слов в файлах
+## Searching for Files and Words in Files
 
-Указал, что файл `Alexey.jpeg` не будет найден по маскам `*.?`, `alexey.*` и `*.jpg`.
+I indicated that the file `Alexey.jpeg` will not be found by the masks `*.?`, `alexey.*`, and `*.jpg`.
 
-![Выбор масок find, которые не найдут файл Alexey.jpeg](image-1/30.png)
+![Selecting find masks that will not find Alexey.jpeg](image-1/30.png)
 
-В задании требовалось отметить маски, которые не подходят для файла `Alexey.jpeg`. Маска `*.?` не подходит, потому что после точки в имени файла не один символ, а четыре — `jpeg`. Маска `alexey.*` тоже не подойдёт, так как в имени файла используется заглавная буква `A`, а поиск чувствителен к регистру. Маска `*.jpg` не подходит, потому что расширение файла — `jpeg`, а не `jpg`.
+The task required selecting masks that do not match the file `Alexey.jpeg`. The mask `*.?` is not suitable because after the dot the filename has four characters, `jpeg`, not one. The mask `alexey.*` also will not match because the filename begins with uppercase `A`, and the search is case-sensitive. The mask `*.jpg` is not suitable because the extension is `jpeg`, not `jpg`.
 
-Указал строки, которые содержат подстроку `world` и поэтому будут выведены командой `grep "world" text.txt`.
+I indicated the lines that contain the substring `world` and therefore will be printed by `grep "world" text.txt`.
 
-![Выбор строк для команды grep](image-1/31.png)
+![Selecting lines for the grep command](image-1/31.png)
 
-В задании требовалось отметить все строки, в которых встречается именно последовательность символов `world`. Поэтому подходят строки, где `world` входит как отдельное слово, как часть другого слова или находится в кавычках. Не подошли варианты `The word is not enough`, `The World Is Not Enough` и `World`, потому что `word` — это другое сочетание букв, а `World` с заглавной буквы не совпадает со строкой поиска, так как `grep` без дополнительных опций учитывает регистр.
+The task required selecting all lines where the exact sequence of characters `world` occurs. Therefore, the suitable lines are those where `world` appears as a separate word, as part of another word, or inside quotation marks. The options `The word is not enough`, `The World Is Not Enough`, and `World` were not suitable because `word` is a different sequence of letters, and `World` with an uppercase letter does not match the search string because `grep` without additional options is case-sensitive.
 
-Скачал архив с произведениями Шекспира, выполнил поиск всех строк, содержащих `love`, и сохранил результат в файл `answer.txt`. Затем загрузил полученный файл на платформу.
+I downloaded an archive with Shakespeare's works, searched for all lines containing `love`, and saved the result to `answer.txt`. Then I uploaded the resulting file to the platform.
 
-![Поиск строк со словом love и создание файла answer.txt](image-1/32.png)
+![Searching for lines with love and creating answer.txt](image-1/32.png)
 
-![Загрузка файла answer.txt на платформу](image-1/33.png)
+![Uploading answer.txt to the platform](image-1/33.png)
 
-В задании требовалось получить файл со всеми строками из произведений Шекспира, содержащими слово `love`. Для этого был использован поиск по текстовым файлам с перенаправлением вывода в `answer.txt`. После проверки содержимого полученный файл был загружен в форму, и система засчитала решение.
+The task required obtaining a file with all lines from Shakespeare's works containing the word `love`. For this, I used a search through text files with output redirection to `answer.txt`. After checking the contents, I uploaded the resulting file to the form, and the system accepted the solution.
 
-# Этап 2. Работа на сервере
+# Stage 2. Working on a Server
 
-## Знакомство с сервером
+## Getting to Know the Server
 
-Указал, что удалённый сервер можно использовать для хранения общедоступных и конфиденциальных данных, хранения больших объёмов информации, а также для выполнения сложных вычислений.
+I indicated that a remote server can be used to store public and confidential data, store large amounts of information, and perform complex computations.
 
-![Задание о назначении удалённого сервера](image-2/1.png)
+![Task about the purpose of a remote server](image-2/1.png)
 
-В задании требовалось выбрать все подходящие варианты использования удалённого сервера. Были отмечены все перечисленные пункты, поскольку сервер действительно может применяться и для хранения данных, и для выполнения вычислительных задач.
+The task required selecting all suitable uses of a remote server. I selected all listed items, because a server can indeed be used both for data storage and for computational tasks.
 
-Указал, что без опаски по интернету можно пересылать открытый ключ `id_rsa.pub`.
+I indicated that the public key `id_rsa.pub` can be sent over the internet safely.
 
-![Выбор ключа, который можно пересылать по интернету](image-2/2.png)
+![Selecting the key that can be sent over the internet](image-2/2.png)
 
-В задании нужно было определить, какой из ключей пары `ssh-keygen` можно передавать другим пользователям. Безопасно передавать именно открытый ключ `id_rsa.pub`, так как закрытый ключ `id_rsa` должен оставаться только у владельца.
+The task required determining which key from an `ssh-keygen` key pair can be shared with other users. It is safe to share the public key `id_rsa.pub`, while the private key `id_rsa` must remain only with the owner.
 
-## Обмен файлами
+## File Exchange
 
-Указал, что для копирования каталога `stepic` на сервер вместе со всем содержимым и подкаталогами подходит команда `scp -r stepic username@server:~/`.
+I indicated that the command `scp -r stepic username@server:~/` is suitable for copying the `stepic` directory to a server together with all its contents and subdirectories.
 
-![Выбор команды для копирования каталога на сервер](image-2/3.png)
+![Selecting the command for copying a directory to a server](image-2/3.png)
 
-В этом задании требовалось выбрать корректную команду для рекурсивного копирования каталога на сервер. Подходит именно `scp -r`, поскольку ключ `-r` отвечает за передачу директории вместе со всеми вложенными файлами и папками.
+This task required choosing the correct command for recursively copying a directory to a server. The suitable command is `scp -r`, because the `-r` option is responsible for transferring a directory together with all nested files and folders.
 
-Указал, что проблему при установке программы через `sudo apt-get install program` могут устранить проверка интернет-соединения, его настройка при отсутствии и команда `sudo apt-get update`.
+I indicated that problems when installing a program with `sudo apt-get install program` can be fixed by checking the internet connection, configuring it if it is unavailable, and running `sudo apt-get update`.
 
-![Выбор действий при проблеме с установкой пакета](image-2/4.png)
+![Selecting actions for a package installation problem](image-2/4.png)
 
-Если пакет не удаётся найти или скачать, сначала нужно проверить наличие доступа к сети, затем при необходимости восстановить соединение и обновить сведения о пакетах при помощи `sudo apt-get update`. Именно эти действия и были выбраны.
+If a package cannot be found or downloaded, the first step is to check network access, then restore the connection if necessary, and update package information with `sudo apt-get update`. These are the actions I selected.
 
-Указал, что программу FileZilla можно использовать для просмотра содержимого каталогов на локальном компьютере и на сервере, а также для копирования файлов с сервера на компьютер.
+I indicated that FileZilla can be used to view directory contents on the local computer and on the server, and also to copy files from the server to the computer.
 
-![Выбор возможностей программы FileZilla](image-2/5.png)
+![Selecting FileZilla capabilities](image-2/5.png)
 
-В задании требовалось отметить функции FileZilla. Эта программа действительно предназначена для работы с файлами и каталогами на локальной и удалённой стороне, а также для передачи файлов между ними.
+The task required selecting FileZilla functions. This program is indeed designed for working with files and directories on the local and remote sides, and for transferring files between them.
 
-## Запуск приложений
+## Launching Applications
 
-Указал, что при необходимости запуска на сервере программы, которой нужен экран, можно либо найти терминальную версию программы, либо настроить сервер на поддержку вывода графической информации.
+I indicated that if a program requiring a screen must be launched on a server, it is possible either to find a terminal version of the program or to configure the server to support graphical output.
 
-![Выбор решений для запуска графической программы на сервере](image-2/6.png)
+![Selecting solutions for launching a graphical program on a server](image-2/6.png)
 
-В задании рассматривалась ситуация, когда программа требует графический интерфейс. Наиболее разумные варианты — использовать консольную версию приложения или настроить вывод графики с удалённого сервера.
+The task considered a situation where a program requires a graphical interface. The most reasonable options are to use a console version of the application or configure graphical output from the remote server.
 
-Указал, что справочную информацию о программе `program` обычно можно получить с помощью команд `program --help` и `man program`.
+I indicated that reference information for a program named `program` can usually be obtained with `program --help` and `man program`.
 
-![Выбор способов получения справки о программе](image-2/7.png)
+![Selecting ways to get help for a program](image-2/7.png)
 
-Для большинства программ в Linux краткая справка вызывается через параметр `--help`, а более полная документация — через `man`. Поэтому именно эти варианты были выбраны.
+For most Linux programs, short help is displayed through the `--help` parameter, and more complete documentation is available through `man`. Therefore, I selected these options.
 
-Изучил справку по программе FastQC и указал, что на вход она может принимать форматы `fastq`, `bam_mapped`, `sam_mapped`, `bam`, `sam`.
+I studied the help for FastQC and indicated that it can accept the input formats `fastq`, `bam_mapped`, `sam_mapped`, `bam`, and `sam`.
 
-![Определение форматов входных данных FastQC](image-2/8.png)
+![Determining FastQC input data formats](image-2/8.png)
 
-В этом задании нужно было ознакомиться со справкой FastQC и определить поддерживаемые форматы данных. По результатам изучения были выбраны форматы, связанные с чтениями и выравниваниями, которые программа действительно умеет анализировать.
+This task required reviewing FastQC help and determining the supported data formats. Based on the documentation, I selected the formats related to reads and alignments that the program can analyze.
 
-Изучил справку по ClustalW и ввёл команду `clustalw -align -infile=test.fasta` для выполнения множественного выравнивания файла `test.fasta`.
+I studied the help for ClustalW and entered the command `clustalw -align -infile=test.fasta` to perform multiple alignment of the `test.fasta` file.
 
-![Ввод команды запуска ClustalW для множественного выравнивания](image-2/9.png)
+![Entering the ClustalW command for multiple alignment](image-2/9.png)
 
-В задании требовалось не просто запустить программу, а указать минимально необходимую команду, которая явно задаёт выполнение множественного выравнивания. Для этого была использована опция `-align` и указан входной файл через `-infile`.
+The task required not just launching the program, but specifying the minimum required command that explicitly performs multiple alignment. For this, I used the `-align` option and specified the input file through `-infile`.
 
-## Контроль запускаемых программ
+## Controlling Running Programs
 
-Указал, что после последовательности действий `fg %1`, `Ctrl+C`, `fg %2`, `Ctrl+Z`, `jobs` информация будет показана только о программах `program2` и `program3`.
+I indicated that after the sequence `fg %1`, `Ctrl+C`, `fg %2`, `Ctrl+Z`, `jobs`, information will be shown only about `program2` and `program3`.
 
-![Выбор ответа о результате выполнения команд fg, Ctrl+C, Ctrl+Z и jobs](image-2/10.png)
+![Selecting the result of fg, Ctrl+C, Ctrl+Z, and jobs](image-2/10.png)
 
-После `Ctrl+C` первая программа завершается и больше не относится к списку заданий оболочки. Вторая после `Ctrl+Z` оказывается приостановленной, а третья остаётся в фоне, поэтому команда `jobs` покажет только `program2` и `program3`.
+After `Ctrl+C`, the first program terminates and no longer belongs to the shell's job list. The second program becomes suspended after `Ctrl+Z`, and the third remains in the background, so `jobs` will show only `program2` and `program3`.
 
-Указал, что идентификаторы процессов в `jobs`, `top` и `ps` различаются.
+I indicated that identifiers in `jobs`, `top`, and `ps` differ.
 
-![Выбор ответа о различии идентификаторов в jobs, top и ps](image-2/11.png)
+![Selecting the answer about identifiers in jobs, top, and ps](image-2/11.png)
 
-В задании сравнивались идентификаторы, которые показывают разные утилиты. `jobs` использует номера заданий оболочки, а `top` и `ps` работают с идентификаторами процессов, поэтому значения не совпадают.
+The task compared identifiers shown by different utilities. `jobs` uses shell job numbers, while `top` and `ps` work with process IDs, so the values do not match.
 
-Указал, что мгновенно завершить остановленный процесс можно командой `kill -9`.
+I indicated that a stopped process can be terminated instantly with `kill -9`.
 
-![Выбор команды для немедленного завершения остановленного процесса](image-2/12.png)
+![Selecting the command for immediately terminating a stopped process](image-2/12.png)
 
-Сигнал `-9` соответствует принудительному завершению процесса. Поэтому именно этот вариант был выбран как правильный.
+Signal `-9` corresponds to forced process termination. Therefore, I selected this option as the correct one.
 
-Указал, что использование `kill` без опций по отношению к процессу, остановленному через `Ctrl+Z`, приведёт к тому, что процесс будет завершён.
+I indicated that using `kill` without options on a process stopped with `Ctrl+Z` will cause the process to terminate.
 
-![Выбор результата выполнения kill для остановленного процесса](image-2/13.png)
+![Selecting the result of kill for a stopped process](image-2/13.png)
 
-По умолчанию `kill` отправляет сигнал завершения. Даже если процесс был ранее остановлен, после получения такого сигнала он завершает работу.
+By default, `kill` sends a termination signal. Even if the process was previously stopped, after receiving such a signal it exits.
 
-## Многопоточные приложения
+## Multithreaded Applications
 
-Указал, что остановленное по `Ctrl+Z` многопоточное приложение использует `0% CPU`.
+I indicated that a multithreaded application stopped with `Ctrl+Z` uses `0% CPU`.
 
-![Выбор ответа о загрузке CPU остановленным приложением](image-2/14.png)
+![Selecting the answer about CPU load of a stopped application](image-2/14.png)
 
-После остановки процесса выполнение инструкций прекращается, поэтому процессорное время больше не расходуется. Именно поэтому был выбран ответ `0% CPU`.
+After a process is stopped, instruction execution stops, so CPU time is no longer consumed. That is why I selected `0% CPU`.
 
-Указал, что остановленное многопоточное приложение продолжает занимать столько памяти, сколько потребляло в момент остановки.
+I indicated that a stopped multithreaded application continues to occupy the same amount of memory that it used at the moment it was stopped.
 
-![Выбор ответа о памяти остановленного приложения](image-2/15.png)
+![Selecting the answer about memory of a stopped application](image-2/15.png)
 
-Остановка процесса не освобождает уже занятую память автоматически. Пока процесс не завершён, его адресное пространство сохраняется, поэтому объём памяти остаётся тем же.
+Stopping a process does not automatically free the memory it has already occupied. While the process has not exited, its address space is preserved, so the amount of memory remains the same.
 
-Указал, что принудительно завершить один отдельный поток запущенного многопоточного приложения нельзя.
+I indicated that a single separate thread of a running multithreaded application cannot be forcibly terminated.
 
-![Выбор ответа о завершении одного потока многопоточного приложения](image-2/16.png)
+![Selecting the answer about terminating one thread of a multithreaded application](image-2/16.png)
 
-В задании рассматривалась обычная работа из командной строки Linux. Стандартными средствами вроде `kill` управляют процессом целиком, а не отдельным потоком, поэтому был выбран вариант «Никак».
+The task considered ordinary Linux command-line work. Standard tools such as `kill` manage the entire process rather than a separate thread, so I selected the option that this cannot be done.
 
-Изучил справку по `bowtie2` и определил, что в несколько потоков можно выполнять только второй этап, то есть запуск `bowtie2`, а не `bowtie2-build`.
+I studied the help for `bowtie2` and determined that only the second stage can be run in multiple threads, namely `bowtie2`, not `bowtie2-build`.
 
-![Выбор этапа bowtie2, который можно выполнять в несколько потоков](image-2/17.png)
+![Selecting the bowtie2 stage that can run in multiple threads](image-2/17.png)
 
-В этом задании нужно было посмотреть параметры двух подпроцессов и определить, где доступна многопоточность. Поддержка нескольких потоков есть именно у `bowtie2`.
+This task required checking the parameters of two subprocesses and determining where multithreading is available. Support for multiple threads exists specifically in `bowtie2`.
 
-Выполнил практическое задание с `bowtie2`: запустил второй этап программы, перенаправил поток ошибок в файл `align.err` и проверил его содержимое в терминале.
+I completed the practical task with `bowtie2`: I launched the second stage of the program, redirected the error stream to `align.err`, and checked its contents in the terminal.
 
-![Результат запуска bowtie2 и просмотр файла align.err](image-2/18.png)
+![Result of running bowtie2 and viewing align.err](image-2/18.png)
 
-На скриншоте показана команда запуска `bowtie2` с перенаправлением `stderr` в отдельный файл и последующий вывод его содержимого через `cat`. Это подтверждает правильное использование перенаправления потоков.
+The screenshot shows the `bowtie2` launch command with `stderr` redirected to a separate file, followed by printing the file contents with `cat`. This confirms correct use of stream redirection.
 
-После выполнения задания загрузил полученный файл `align.err` на платформу, что было принято системой как верное решение.
+After completing the task, I uploaded the resulting `align.err` file to the platform, and the system accepted it as the correct solution.
 
-![Загрузка файла align.err на платформу](image-2/19.png)
+![Uploading align.err to the platform](image-2/19.png)
 
-В задании требовалось не только получить файл с выводом ошибок, но и загрузить его в форму проверки. Файл был успешно прикреплён и зачтён.
+The task required not only creating the file with error output, but also uploading it to the verification form. The file was successfully attached and accepted.
 
-## Менеджер терминалов tmux
+## The tmux Terminal Manager
 
-Указал, что если открыть две вкладки терминала, остановить процесс в одной из них, перейти во вторую и выполнить `fg`, терминал сообщит, что нет процесса для запуска в `fg`.
+I indicated that if two terminal tabs are opened, a process is stopped in one of them, then I switch to the second one and run `fg`, the terminal will report that there is no process to start with `fg`.
 
-![Выбор ответа о команде fg в другой вкладке терминала](image-2/20.png)
+![Selecting the answer about fg in another terminal tab](image-2/20.png)
 
-Команда `fg` работает только с заданиями текущей оболочки. Во второй вкладке это задание не существует, поэтому оболочка сообщает об отсутствии процесса для перевода на передний план.
+The `fg` command works only with jobs of the current shell. In the second tab, this job does not exist, so the shell reports that there is no process to bring to the foreground.
 
-Указал, что если в `tmux` осталась последняя открытая вкладка и в ней выполнить команду `exit`, то `tmux` завершит работу.
+I indicated that if the last open tab remains in `tmux` and the `exit` command is run in it, `tmux` will terminate.
 
-![Выбор ответа о завершении tmux при exit в последней вкладке](image-2/21.png)
+![Selecting the answer about tmux ending after exit in the last tab](image-2/21.png)
 
-Когда закрывается последняя активная вкладка или окно, завершается и сама сессия `tmux`. Поэтому был выбран именно этот вариант.
+When the last active tab or window is closed, the `tmux` session itself also ends. Therefore, I selected this option.
 
-Указал, что если запустить `tmux` на сервере и затем закрыть локальный терминал, соединение с сервером прервётся, но работа `tmux` продолжится.
+I indicated that if `tmux` is launched on a server and then the local terminal is closed, the connection to the server will be interrupted, but `tmux` will continue running.
 
-![Выбор ответа о поведении tmux после закрытия терминала](image-2/22.png)
+![Selecting the answer about tmux behavior after closing the terminal](image-2/22.png)
 
-Смысл `tmux` как раз в том, что сессия продолжает существовать на удалённой машине независимо от текущего подключения пользователя. После нового входа к ней можно снова присоединиться.
+The point of `tmux` is that the session continues to exist on the remote machine independently of the current user connection. After logging in again, the user can reattach to it.
 
-Указал, что если запустить процесс в фоновом режиме во вкладке `tmux`, а затем принудительно закрыть эту вкладку, то вкладка закроется вместе с запущенным в ней процессом.
+I indicated that if a process is launched in the background inside a `tmux` tab and then that tab is forcibly closed, the tab will close together with the process running inside it.
 
-![Выбор ответа о закрытии вкладки tmux с фоновым процессом](image-2/23.png)
+![Selecting the answer about closing a tmux tab with a background process](image-2/23.png)
 
-В задании рассматривалось закрытие окна `tmux`. При закрытии окна завершаются и связанные с ним процессы, если для них не был предусмотрен иной способ продолжения работы.
+The task considered closing a `tmux` window. When a window is closed, the processes associated with it also terminate unless another way to keep them running was arranged.
 
-Изучил команды `tmux` и указал, что за переименование текущей вкладки отвечает сочетание `Ctrl+B`, затем `,`.
+I studied `tmux` commands and indicated that renaming the current tab is done with `Ctrl+B`, then `,`.
 
-![Выбор команды tmux для переименования вкладки](image-2/24.png)
+![Selecting the tmux command for renaming a tab](image-2/24.png)
 
-Это стандартное сочетание клавиш в `tmux` для изменения имени текущего окна, поэтому был выбран вариант с запятой.
+This is the standard `tmux` key sequence for changing the name of the current window, so I selected the option with the comma.
 
-При самостоятельном изучении возможностей `tmux` отметил верные утверждения о разделении вкладок: можно закрывать одну из частей комбинацией `Ctrl+B`, затем `x`; можно делить окно несколько раз; команды разделения действуют только в текущей вкладке; при дополнительном вертикальном делении уже разделённой горизонтально вкладки получается три области.
+While independently studying `tmux` features, I selected the correct statements about splitting tabs: one part can be closed with `Ctrl+B`, then `x`; the window can be split several times; split commands apply only to the current tab; and if an already horizontally split tab is split vertically once more, three panes are created.
 
-![Самостоятельное задание по разделению окон в tmux](image-2/25.png)
+![Independent task about splitting panes in tmux](image-2/25.png)
 
-В этом задании нужно было самостоятельно проверить работу разделения окон в `tmux`. По результатам были отмечены утверждения, соответствующие фактическому поведению программы при разбиении и закрытии панелей.
+In this task, I had to independently check how pane splitting works in `tmux`. Based on the results, I selected the statements that match the actual behavior of the program when splitting and closing panes.
 
-# Этап 3. Продвинутые темы
+# Stage 3. Advanced Topics
 
-## Текстовый редактор vim
+## The vim Text Editor
 
-Указал, что для выхода из редактора `vim` сразу после открытия файла нужно нажать `:`, затем `q`, затем `Enter`.
+I indicated that to exit `vim` immediately after opening a file, it is necessary to press `:`, then `q`, then `Enter`.
 
-![Выбор комбинации клавиш для выхода из vim](image-3/1.png)
+![Selecting the key sequence for exiting vim](image-3/1.png)
 
-В задании требовалось определить правильную последовательность действий для выхода из `vim`, если файл только что открыт и изменений в нём нет. Правильным вариантом является команда `:q`, которая завершает работу редактора.
+The task required determining the correct sequence for exiting `vim` if the file has just been opened and no changes have been made. The correct option is the `:q` command, which exits the editor.
 
-Изучил различие между перемещением по `word` и `WORD` в `vim` и отметил верные утверждения для заданной строки.
+I studied the difference between moving by `word` and `WORD` in `vim` and selected the correct statements for the given line.
 
-![Задание на различие word и WORD в vim](image-3/2.png)
+![Task about the difference between word and WORD in vim](image-3/2.png)
 
-В этом задании нужно было разобраться, что команды с маленькими буквами работают со словами в обычном понимании, а команды с заглавными — с последовательностями символов до разделителя-пробела. Поэтому были выбраны только те утверждения, которые соответствуют этому различию.
+This task required understanding that commands with lowercase letters work with words in the usual sense, while commands with uppercase letters work with sequences of characters up to a space separator. Therefore, I selected only the statements that match this difference.
 
-Определил корректные наборы нажатий клавиш, позволяющие преобразовать строку `one two three four five` в строку `three four four four five`.
+I determined the correct key sequences that transform the line `one two three four five` into `three four four four five`.
 
-![Редактирование строки в vim с помощью команд normal mode](image-3/3.png)
+![Editing a line in vim with normal mode commands](image-3/3.png)
 
-Задание было посвящено редактированию текста в нормальном режиме `vim`. Были отмечены только те комбинации, которые действительно приводят к требуемому результату, используя удаление, перемещение и вставку текста.
+The task was about editing text in `vim` normal mode. I selected only the combinations that actually produce the required result using deletion, movement, and text insertion.
 
-Ввёл команду `:%s/Windows/Linux`, чтобы заменить в файле все строки, содержащие слово `Windows`, на такие же строки со словом `Linux`, причём в каждой строке заменялось только первое вхождение.
+I entered the command `:%s/Windows/Linux` to replace, in the file, all lines containing the word `Windows` with corresponding lines containing `Linux`, replacing only the first occurrence in each line.
 
-![Команда замены текста в vim](image-3/4.png)
+![Text replacement command in vim](image-3/4.png)
 
-Здесь требовалось использовать команду подстановки в `vim`. Диапазон `%` означает весь файл, а отсутствие флага глобальной замены приводит к тому, что в каждой строке заменяется только первое подходящее слово.
+This task required using a substitution command in `vim`. The `%` range means the entire file, and the absence of the global replacement flag means that only the first matching word is replaced in each line.
 
-Самостоятельно разобрался с визуальным режимом `vim` и отметил правильные утверждения о его работе.
+I independently studied `vim` visual mode and selected the correct statements about how it works.
 
-![Задание по Visual mode в vim](image-3/5.png)
+![Task about Visual mode in vim](image-3/5.png)
 
-В этом задании были подтверждены основные свойства режима выделения: вход по клавише `v`, возможность использовать команды удаления и копирования, а также отображение строки состояния `-- VISUAL --`. Также было отмечено, что выйти из режима выделения можно клавишей `Esc`.
+This task confirmed the main properties of selection mode: entering it with `v`, the ability to use delete and copy commands, and the display of the `-- VISUAL --` status line. I also noted that selection mode can be exited with `Esc`.
 
-## Скрипты на bash: основы
+## Bash Scripts: Basics
 
-Указал, что при перемещении по истории команд стрелками вверх и вниз после запуска нескольких вложенных оболочек будут показываться только команды из текущей оболочки, то есть из набора `C`.
+I indicated that when moving through command history with the up and down arrows after launching several nested shells, only commands from the current shell are shown, that is, from set `C`.
 
-![История команд во вложенных оболочках bash и sh](image-3/6.png)
+![Command history in nested bash and sh shells](image-3/6.png)
 
-История команд хранится отдельно для каждой активной оболочки. Поэтому при работе во внутренней оболочке доступны только те команды, которые были введены именно в ней.
+Command history is stored separately for each active shell. Therefore, while working inside an inner shell, only the commands entered in that shell are available.
 
-Определил, что после выполнения приведённого скрипта файл `file1.txt` не будет существовать, поэтому корректным ответом является вариант «Никак».
+I determined that after executing the provided script, the file `file1.txt` will not exist, so the correct answer is "No way".
 
-![Задание о пути к файлу после выполнения bash-скрипта](image-3/7.png)
+![Task about the path to a file after running a Bash script](image-3/7.png)
 
-Скрипт создаёт файл в каталоге `/home/bi`, однако затем выполняется переход в другой каталог. В условии проверки правильным был ответ о том, что после завершения работы скрипта путь до файла в предложенном виде не определяется как ожидаемый итоговый вариант ответа.
+The script creates a file in `/home/bi`, but then changes to another directory. In the verification condition, the correct answer was that after the script finishes, the path to the file in the proposed form is not defined as the expected final answer.
 
-Отметил допустимые имена переменных в `bash`: `_variable`, `VARiable`, `variable123`.
+I selected the valid variable names in `bash`: `_variable`, `VARiable`, and `variable123`.
 
-![Допустимые имена переменных в bash](image-3/8.png)
+![Valid variable names in bash](image-3/8.png)
 
-В `bash` имя переменной может содержать буквы, цифры и символ подчёркивания, но не должно начинаться с цифры и не должно содержать пробелы или специальные символы вроде `-` и `@`.
+In `bash`, a variable name can contain letters, digits, and underscores, but it must not begin with a digit and must not contain spaces or special characters such as `-` and `@`.
 
-Написал скрипт, принимающий два аргумента командной строки и выводящий их в формате `Arguments are: $1=... $2=...`.
+I wrote a script that accepts two command-line arguments and prints them in the format `Arguments are: $1=... $2=...`.
 
-![Скрипт для вывода аргументов командной строки](image-3/9.png)
+![Script for printing command-line arguments](image-3/9.png)
 
-В решении использовались позиционные параметры `$1` и `$2`. Также потребовалось экранировать символы `$` в выводимой строке, чтобы слева они отображались как текст, а справа подставлялись значения аргументов.
+The solution used positional parameters `$1` and `$2`. It was also necessary to escape the `$` characters in the printed string so that they appeared as text on the left while the argument values were substituted on the right.
 
-## Скрипты на bash: ветвления и циклы
+## Bash Scripts: Branching and Loops
 
-В задании по условным выражениям отметил только те варианты, при которых команда `echo "True"` будет выполняться всегда, независимо от параметров запуска скрипта и значений переменных.
+In the task about conditional expressions, I selected only those options where the command `echo "True"` will always run, regardless of script launch parameters and variable values.
 
-![Условия в конструкции if в bash](image-3/10.png)
+![Conditions in an if construct in bash](image-3/10.png)
 
-Здесь требовалось отличить действительно всегда истинные выражения от тех, результат которых зависит от аргументов скрипта, переменных или существования файлов. Были выбраны только универсально истинные условия.
+Here it was necessary to distinguish expressions that are always true from those whose result depends on script arguments, variables, or the existence of files. I selected only universally true conditions.
 
-Определил, что при запуске фрагмента скрипта с `var=3`, а затем с `var=5`, на экран сначала выводится `four`, а потом снова `four`.
+I determined that when the script fragment is run with `var=3` and then with `var=5`, the screen first prints `four`, and then again `four`.
 
-![Определение результата цепочки if elif else](image-3/11.png)
+![Determining the result of an if elif else chain](image-3/11.png)
 
-Проверка условий выполняется сверху вниз. Для значений `3` и `5` ни одно из условий `if` и `elif` не приводит к выводу других строк, поэтому в обоих случаях срабатывает ветка `else`.
+Conditions are checked from top to bottom. For values `3` and `5`, none of the `if` or `elif` conditions results in other output, so the `else` branch runs in both cases.
 
-Написал скрипт, который по количеству студентов выводит одну из строк: `No students`, `1 student`, `2 students`, `3 students`, `4 students` или `A lot of students`.
+I wrote a script that prints one of the following strings depending on the number of students: `No students`, `1 student`, `2 students`, `3 students`, `4 students`, or `A lot of students`.
 
-![Скрипт с ветвлением по количеству студентов](image-3/12.png)
+![Script with branching by the number of students](image-3/12.png)
 
-В этом задании использовалась последовательность проверок через `if`, `elif` и `else`, позволяющая обработать отдельно случаи от `0` до `4`, а все большие значения отнести к общей категории.
+This task used a sequence of checks with `if`, `elif`, and `else`, allowing cases from `0` to `4` to be handled separately and all larger values to be assigned to one general category.
 
-Указал, что в данном фрагменте цикла слово `start` выводится 5 раз, а слово `finish` — 4 раза.
+I indicated that in the given loop fragment, the word `start` is printed 5 times and the word `finish` is printed 4 times.
 
-![Работа цикла for и continue в bash](image-3/13.png)
+![Operation of a for loop and continue in bash](image-3/13.png)
 
-Команда `echo "start"` выполняется на каждой итерации цикла. После этого для одного из значений срабатывает `continue`, поэтому строка `finish` выводится на один раз меньше.
+The command `echo "start"` runs on every loop iteration. After that, `continue` is triggered for one of the values, so the line `finish` is printed one time fewer.
 
-Написал интерактивный скрипт, который запрашивает имя и возраст пользователя, определяет возрастную группу (`child`, `youth`, `adult`) и завершает работу по пустому имени или возрасту `0`.
+I wrote an interactive script that asks for the user's name and age, determines the age group (`child`, `youth`, `adult`), and exits when the name is empty or the age is `0`.
 
-![Интерактивный bash-скрипт с бесконечным циклом](image-3/14.png)
+![Interactive Bash script with an infinite loop](image-3/14.png)
 
-Для решения использовались команды `read`, условные операторы и бесконечный цикл. Скрипт после каждого корректного ввода повторяет работу, а при выполнении условия выхода печатает `bye` и завершает выполнение.
+The solution used `read`, conditional statements, and an infinite loop. After each valid input, the script repeats its work; when the exit condition is met, it prints `bye` and terminates.
 
-## Скрипты на bash: разное
+## Bash Scripts: Miscellaneous
 
-Отметил все инструкции, которые увеличивают значение переменной `a` на значение переменной `b`.
+I selected all instructions that increase the value of variable `a` by the value of variable `b`.
 
-![Арифметические операции с переменными в bash](image-3/15.png)
+![Arithmetic operations with variables in bash](image-3/15.png)
 
-Задание проверяло понимание синтаксиса `let` и правил вычисления арифметических выражений в `bash`. Были выбраны только те формы записи, которые действительно изменяют переменную `a` на сумму прежнего значения `a` и значения `b`.
+The task checked understanding of the `let` syntax and the rules for evaluating arithmetic expressions in `bash`. I selected only the forms that really change variable `a` to the sum of its previous value and the value of `b`.
 
-Определил, что после перехода в каталог `/home/bi/` команда `echo "pwd"` выведет на экран текст `pwd`, а не текущий путь.
+I determined that after changing to the `/home/bi/` directory, the command `echo "pwd"` prints the text `pwd` on the screen, not the current path.
 
-![Различие между pwd и echo "pwd"](image-3/16.png)
+![Difference between pwd and echo "pwd"](image-3/16.png)
 
-В данном случае строка заключена в кавычки и передана команде `echo` как обычный текст. Поэтому выполняется не команда `pwd`, а просто выводится её имя.
+In this case, the string is enclosed in quotation marks and passed to `echo` as ordinary text. Therefore, the `pwd` command is not executed; only its name is printed.
 
-Указал верные способы проверить код возврата внешней программы, если она пишет что-то в `stdout`.
+I indicated the correct ways to check the return code of an external program if it writes something to `stdout`.
 
-![Проверка кода возврата внешней программы в bash](image-3/17.png)
+![Checking the return code of an external program in bash](image-3/17.png)
 
-В задании нужно было понять, что конструкция с обратными кавычками подставляет именно текст вывода, а не код завершения. Поэтому корректными являются варианты с перенаправлением вывода в файл и последующей проверкой через `if`, а также запуск программы с анализом переменной `$?`.
+The task required understanding that a construct with backticks substitutes the text output, not the exit code. Therefore, the correct options are those with output redirection to a file followed by a check through `if`, and also launching the program and analyzing the `$?` variable.
 
-Определил результат десяти вызовов функции `counter`: строка, выводимая командой `echo`, имеет вид `counters are  and 110`.
+I determined the result of ten calls to the `counter` function: the line printed by `echo` has the form `counters are  and 110`.
 
-![Задание на локальные и глобальные переменные в функции bash](image-3/18.png)
+![Task about local and global variables in a Bash function](image-3/18.png)
 
-В этом примере переменная `c1` объявлена как локальная, поэтому вне функции она остаётся пустой. Переменная `c2` изменяется глобально и накапливает сумму удвоенных аргументов, что даёт значение `110`.
+In this example, variable `c1` is declared local, so outside the function it remains empty. Variable `c2` is changed globally and accumulates the sum of doubled arguments, which gives the value `110`.
 
-Написал рекурсивный скрипт для вычисления наибольшего общего делителя двух чисел по алгоритму Евклида.
+I wrote a recursive script for calculating the greatest common divisor of two numbers using Euclid's algorithm.
 
-![Рекурсивный bash-скрипт для вычисления НОД](image-3/19.png)
+![Recursive Bash script for calculating GCD](image-3/19.png)
 
-Скрипт считывает два числа, вызывает функцию `gcd`, выводит результат в формате `GCD is ...`, затем снова ожидает ввод. При пустой строке работа корректно завершается сообщением `bye`.
+The script reads two numbers, calls the `gcd` function, prints the result in the format `GCD is ...`, and then waits for input again. When an empty line is entered, it correctly finishes with the message `bye`.
 
-Написал калькулятор на `bash`, который поддерживает операции `+`, `-`, `*`, `/`, `%`, `**`, завершает работу по команде `exit` и выводит `error` при некорректной команде.
+I wrote a calculator in `bash` that supports the operations `+`, `-`, `*`, `/`, `%`, `**`, exits on the `exit` command, and prints `error` for an invalid command.
 
-![Калькулятор на bash](image-3/20.png)
+![Calculator in bash](image-3/20.png)
 
-В решении использовалось чтение строк из стандартного ввода, разбор аргументов и проверка допустимости операции. Скрипт выполняет вычисление только для корректного формата ввода.
+The solution used reading lines from standard input, parsing arguments, and checking operation validity. The script performs calculations only for correctly formatted input.
 
-## Продвинутый поиск и редактирование
+## Advanced Search and Editing
 
-Указал, что команда `find /home/bi -iname "star*"` найдёт, а команда `find /home/bi -name "star*"` не найдёт файлы `STARS.txt` и `Star_Wars.avi`.
+I indicated that `find /home/bi -iname "star*"` will find the files `STARS.txt` and `Star_Wars.avi`, while `find /home/bi -name "star*"` will not.
 
-![Сравнение find -iname и find -name](image-3/21.png)
+![Comparing find -iname and find -name](image-3/21.png)
 
-Опция `-iname` выполняет поиск без учёта регистра, тогда как `-name` учитывает регистр символов. Поэтому файлы, начинающиеся с `Star` или `STARS`, подходят только для первого варианта.
+The `-iname` option performs a case-insensitive search, while `-name` is case-sensitive. Therefore, files beginning with `Star` or `STARS` match only the first variant.
 
-Отметил верные утверждения о различии опций `find -path` и `find -name`.
+I selected the correct statements about the difference between the `find -path` and `find -name` options.
 
-![Понимание различий между -path и -name в find](image-3/22.png)
+![Understanding differences between -path and -name in find](image-3/22.png)
 
-Опция `-name` сравнивает только имя файла или каталога, а `-path` — весь путь целиком. Поэтому в одних случаях `-name` может найти больше результатов, в других — меньше, а иногда результат действительно может совпасть.
+The `-name` option compares only the file or directory name, while `-path` compares the whole path. Therefore, in some cases `-name` may find more results, in others fewer, and sometimes the result can indeed be the same.
 
-Определил, что команда `find /home/bi -mindepth 2 -maxdepth 3 -name "file*"` найдёт все файлы, кроме `file3`.
+I determined that the command `find /home/bi -mindepth 2 -maxdepth 3 -name "file*"` will find all files except `file3`.
 
-![Использование -mindepth и -maxdepth в find](image-3/23.png)
+![Using -mindepth and -maxdepth in find](image-3/23.png)
 
-Ограничения по глубине поиска отсекают объекты, находящиеся слишком близко к корню поиска или слишком глубоко. Поэтому файл `file3` не попадает в нужный диапазон глубины.
+Search depth restrictions exclude objects that are too close to the search root or too deep. Therefore, `file3` does not fall into the required depth range.
 
-Указал, что наибольший размер файла `results.txt` получится у команд `grep -A 1`, `grep -B 1` и `grep -C 1`, то есть у всех вариантов, кроме обычного `grep "word"`.
+I indicated that the largest size of `results.txt` will be produced by `grep -A 1`, `grep -B 1`, and `grep -C 1`, that is, by all variants except ordinary `grep "word"`.
 
-![Опции контекста в grep](image-3/24.png)
+![Context options in grep](image-3/24.png)
 
-Так как слово `word` встречается в каждой строке файла, добавление контекста приводит к выводу всех строк файла. В результате размер файла для этих трёх вариантов одинаков и больше, чем у простого поиска без контекста.
+Because the word `word` appears in every line of the file, adding context causes all lines of the file to be printed. As a result, the file size for these three variants is the same and larger than for a simple search without context.
 
-Отметил строки, которые выводит команда `grep -E "[xkLXKL]?[uU]buntu$" text.txt`.
+I selected the lines printed by the command `grep -E "[xkLXKL]?[uU]buntu$" text.txt`.
 
-![Регулярные выражения в grep -E](image-3/25.png)
+![Regular expressions in grep -E](image-3/25.png)
 
-Регулярное выражение допускает необязательный символ `x`, `k`, `X`, `K`, `L` или `l` перед словом `ubuntu` или `Ubuntu` в конце строки. Поэтому были выбраны только те строки, которые удовлетворяют именно этой форме записи.
+The regular expression allows an optional `x`, `k`, `X`, `K`, `L`, or `l` before the word `ubuntu` or `Ubuntu` at the end of the line. Therefore, I selected only the lines that satisfy exactly this pattern.
 
-Указал, что если в команде `sed -n "/[a-z]*/p" text.txt` не использовать опцию `-n`, то каждая строка будет выведена два раза.
+I indicated that if the `-n` option is not used in the command `sed -n "/[a-z]*/p" text.txt`, each line will be printed twice.
 
-![Влияние опции -n на вывод sed](image-3/26.png)
+![Effect of the -n option on sed output](image-3/26.png)
 
-Без `-n` `sed` и так печатает строки по умолчанию, а команда `p` печатает их повторно. Поэтому итоговый вывод дублируется.
+Without `-n`, `sed` already prints lines by default, and the `p` command prints them again. Therefore, the final output is duplicated.
 
-Составил инструкцию `sed`, которая заменяет все «аббревиатуры» из заглавных латинских букв на слово `abbreviation` и записывает результат в файл `edited.txt`.
+I wrote a `sed` instruction that replaces all "abbreviations" made of uppercase Latin letters with the word `abbreviation` and writes the result to `edited.txt`.
 
-![Практическое задание по замене текста через sed](image-3/27.png)
+![Practical task on replacing text with sed](image-3/27.png)
 
-В этом задании нужно было корректно описать регулярное выражение для поиска слов из двух и более заглавных букв, окружённых пробелами, и выполнить замену с сохранением структуры текста и числа пробелов.
+This task required correctly describing a regular expression for finding words of two or more uppercase letters surrounded by spaces, and performing the replacement while preserving the text structure and the number of spaces.
 
-## Строим графики в gnuplot
+## Building Plots in gnuplot
 
-Указал, что при запуске `gnuplot` для сохранения построенных графиков после выхода из программы нужно использовать опцию `-p` (`--persist`).
+I indicated that when launching `gnuplot`, the `-p` (`--persist`) option should be used to keep the plotted graphs after exiting the program.
 
-![Опция persist при запуске gnuplot](image-3/28.png)
+![Persist option when launching gnuplot](image-3/28.png)
 
-Эта опция предотвращает автоматическое закрытие окон с графиками после завершения работы `gnuplot`, что удобно при просмотре результатов построения.
+This option prevents graph windows from closing automatically after `gnuplot` finishes, which is convenient when viewing plotting results.
 
-Определил, что при командах `set key autotitle columnhead` и `plot 'data.csv' using 1:2` названием ряда данных станет первое значение из второго столбца, а на графике будет нарисовано 9 точек.
+I determined that with the commands `set key autotitle columnhead` and `plot 'data.csv' using 1:2`, the data series name will become the first value from the second column, and 9 points will be drawn on the graph.
 
-![Название ряда и число точек в gnuplot](image-3/29.png)
+![Series title and number of points in gnuplot](image-3/29.png)
 
-Так как задана автоматическая подпись из заголовка столбца, `gnuplot` использует первую строку файла как заголовок. Поэтому она не участвует в построении как точка, и остаётся 9 точек данных.
+Because automatic labeling from the column header is enabled, `gnuplot` uses the first row of the file as the header. Therefore, that row is not used as a plotted point, leaving 9 data points.
 
-Изменил файл `move.rot` так, чтобы график зеркально отразился относительно горизонтальной плоскости, начал вращаться в обратную сторону и делал это в два раза быстрее.
+I changed the `move.rot` file so that the graph was mirrored relative to the horizontal plane, started rotating in the opposite direction, and did so twice as fast.
 
-![Изменённое содержимое файла move.rot](image-3/30.png)
+![Modified contents of move.rot](image-3/30.png)
 
-![Проверка задания по изменению move.rot](image-3/31.png)
+![Checking the move.rot modification task](image-3/31.png)
 
-Для решения нужно было изменить только существующие инструкции в файле без добавления и удаления строк. Отражение графика было достигнуто сменой знака у выражения для поверхности, обратное вращение — изменением направления изменения угла, а увеличение скорости — уменьшением времени паузы между перерисовками.
+To solve the task, it was necessary to change only existing instructions in the file without adding or deleting lines. Mirroring the graph was achieved by changing the sign of the surface expression, reverse rotation by changing the direction of angle change, and increased speed by reducing the pause between redraws.
 
-## Разное
+## Miscellaneous
 
-Отметил все команды, которые переводят права доступа файла `file.txt` из `r--r--r--` в `rwxrw-r--`.
+I selected all commands that change the permissions of `file.txt` from `r--r--r--` to `rwxrw-r--`.
 
-![Изменение прав доступа файла через chmod](image-3/32.png)
+![Changing file permissions with chmod](image-3/32.png)
 
-Здесь требовалось понимать как символьную, так и числовую запись прав доступа. Были отмечены корректные варианты как через последовательные символьные изменения, так и через числовой режим `764`.
+This required understanding both symbolic and numeric permission notation. I selected the correct variants both through sequential symbolic changes and through numeric mode `764`.
 
-Указал команды, после которых пользователь `user` из группы `group` сможет создавать файлы в директории `dir`, созданной через `sudo`.
+I indicated the commands after which the user `user` from group `group` will be able to create files in the directory `dir` created through `sudo`.
 
-![Права на директорию и возможность создавать файлы внутри неё](image-3/33.png)
+![Directory permissions and the ability to create files inside it](image-3/33.png)
 
-Для создания файлов внутри каталога необходимо наличие права записи на сам каталог. Поэтому корректными являются команды, которые либо выдают право записи другим пользователям, либо передают владение каталогом пользователю.
+To create files inside a directory, write permission on the directory itself is required. Therefore, the correct commands are those that either grant write permission to other users or transfer ownership of the directory to the user.
 
-Отметил характеристики файла, которые можно посчитать при помощи команды `wc`: количество строк, слов и символов.
+I selected the file characteristics that can be counted with `wc`: the number of lines, words, and characters.
 
-![Использование команды wc](image-3/34.png)
+![Using the wc command](image-3/34.png)
 
-Команда `wc` предназначена именно для подсчёта строк, слов и символов или байтов. При этом количество предложений она напрямую не вычисляет.
+The `wc` command is designed specifically for counting lines, words, and characters or bytes. It does not directly count the number of sentences.
 
-Вписал команду, выводящую объём текущей директории в удобном для чтения формате: `du -sh .`.
+I entered the command that prints the size of the current directory in a human-readable format: `du -sh .`.
 
-![Определение размера текущей директории](image-3/35.png)
+![Determining the size of the current directory](image-3/35.png)
 
-Для решения использовалась команда `du` с опциями суммарного подсчёта и человекочитаемого формата. Она позволяет сразу получить итоговый размер каталога.
+The solution used `du` with options for summary counting and human-readable formatting. This makes it possible to immediately obtain the total size of the directory.
 
-Вписал максимально короткую команду для создания трёх каталогов `dir1`, `dir2`, `dir3`: `mkdir dir{1..3}`.
+I entered the shortest command for creating three directories `dir1`, `dir2`, and `dir3`: `mkdir dir{1..3}`.
 
-![Создание нескольких директорий одной командой](image-3/36.png)
+![Creating several directories with one command](image-3/36.png)
 
-В этом задании использовалось раскрытие фигурных скобок в оболочке `bash`, что позволяет кратко записывать последовательности имён файлов и каталогов.
+This task used brace expansion in the `bash` shell, which allows sequences of file and directory names to be written concisely.
 
-# ыводы
+# Conclusions
 
-В ходе прохождения внешнего курса «Введение в Linux» были последовательно изучены основные и продвинутые возможности работы в Linux-среде. На первом этапе были освоены базовые команды, работа с файлами, потоками ввода-вывода, архивами и поиском. На втором этапе были закреплены навыки работы с удалёнными серверами, передачей файлов, процессами, многопоточностью и `tmux`. На третьем этапе были изучены редактор `vim`, написание `bash`-скриптов, обработка текста, поиск, построение графиков и управление правами доступа.
+During the external course "Introduction to Linux", I consistently studied the main and advanced capabilities of working in a Linux environment. In the first stage, I mastered basic commands, working with files, input-output streams, archives, and search. In the second stage, I strengthened my skills in working with remote servers, file transfer, processes, multithreading, and `tmux`. In the third stage, I studied the `vim` editor, writing `bash` scripts, text processing, search, plotting, and access permission management.
 
-В результате выполнения всех этапов были получены практические навыки, необходимые для уверенной работы в Linux, автоматизации типовых задач и дальнейшего изучения системного администрирования и инструментов командной строки.
+As a result of completing all stages, I gained practical skills needed for confident Linux work, automation of typical tasks, and further study of system administration and command-line tools.

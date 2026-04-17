@@ -1,18 +1,23 @@
 ---
-title: "Пост по прошедшей неделе"
+title: "Weekly Summary"
 date: 2026-04-02T13:44:19+03:00
 draft: false
-summary: "Краткий обзор того, что было сделано мной за неделю."
+summary: "A short overview of what I worked on during the week."
 authors:
-    - me
+  - me-en
+tags:
+  - week
+  - study
 ---
 
-На прошедшей неделе я продолжил работу над персональным сайтом.
+This week I continued improving the website and filling it with content.
 
-За это время я:
-- добавил на сайт информацию о навыках;
-- оформил раздел с опытом;
-- добавил сведения о достижениях;
-- продолжил наполнение сайта новыми материалами.
+The main work included:
 
-Эта работа помогла мне лучше понятьс структуру сайта на HugoBlox и принципы организации персональной страницы.
+- adding blog posts;
+- preparing project descriptions;
+- updating the experience page;
+- checking page navigation;
+- publishing changes through Git.
+
+I also practiced working with Markdown and organizing materials for a personal academic website.

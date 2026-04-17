@@ -1,0 +1,23 @@
+- id: questions
+  translation: Вопросы
+
+- id: faq
+  translation: FAQ
+
+- id: docs
+  translation: Документация
+
+- id: poweredby_button
+  translation: Создать сайт
+
+- id: read_more
+  translation: Читать дальше
+
+- id: about_me
+  translation: Обо мне
+
+- id: experience
+  translation: Опыт
+
+- id: btn_site
+  translation: Сайт

@@ -1,0 +1,117 @@
+schema: hugoblox/author/v1
+slug: me-en
+is_owner: true
+name:
+  display: Alexey Lashikov
+  given: Alexey
+  family: Lashikov
+  alternate: ''
+  pronunciation: ''
+  pronouns: he/him
+
+postnominals: []
+
+status:
+  icon: "☕️"
+
+role: Student
+bio: |
+  Student at RUDN University. I am interested in programming, web development, DevOps, and educational projects.
+
+affiliations:
+  - name: RUDN University
+
+links:
+  - icon: at-symbol
+    url: mailto:1032253527@rudn.ru
+    label: E-mail
+  - icon: brands/github
+    url: https://github.com/AlexeyLashikov
+    label: GitHub
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?view_op=list_works&hl=ru&user=0DR_ueQAAAAJ
+    label: Google Scholar
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0000-8616-0387
+    label: ORCID
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/profile/Alexey-Lashikov?ev=hdr_xprf
+    label: ResearchGate
+  - icon: academicons/mendeley
+    url: https://www.mendeley.com/reference-manager/library/all-references/
+    label: Mendeley
+  - icon: academicons/arxiv
+    url: https://arxiv.org/
+    label: arXiv
+  - icon: academicons/academia
+    url: https://independent.academia.edu/AlexeyLashikov
+    label: Academia.edu
+  - icon: book-open
+    url: https://www.elibrary.ru/project_user_office.asp
+    label: Elibrary
+
+interests:
+  - Algorithms and programming
+  - Web development
+  - DevOps and CI/CD
+  - Mathematics and technical disciplines
+
+education:
+  - degree: Computer and Information Sciences
+    institution: RUDN University
+    start: 2025-09-01
+    end: 2029-06-30
+
+skills:
+  - name: Technical Skills
+    items:
+      - label: Git
+        level: 4
+      - label: Hugo
+        level: 4
+      - label: Linux
+        level: 4
+      - label: Python
+        level: 4
+      - label: Frontend Development
+        level: 4
+      - label: C++
+        level: 2
+
+work:
+  - position: Coursework and Laboratory Projects
+    company_name: RUDN University
+    company_url: 'https://www.rudn.ru/'
+    company_logo: 'icons/custom/Logo-rudn.png'
+    date_start: '2025-09-01'
+    date_end: '2029-09-01'
+    summary: |
+      Educational projects and laboratory work related to programming, web development, and version control systems.
+
+languages:
+  - name: Russian
+    level: 5
+    label: Native
+  - name: English
+    level: 3
+    label: Intermediate
+
+awards:
+  - title: IYIA 2023
+    url: 'https://www.technopol-gr.com/news/IID-2023-results-ru/'
+    date: '2023-09-19'
+    icon: trophy
+    summary: |
+      Silver medal and a special prize for a creative approach and a significant invention: the universal reconnaissance robot Mecanum link snake.
+  - title: Powertech 2023
+    url: 'https://www.technopol-gr.com/news/powertech-2023/'
+    date: '2023-12-16'
+    icon: trophy
+    summary: |
+      First place at the PowerTech STEAM-Star International Invitational Contest in Taipei, Taiwan.
+  - title: Powertech 2024
+    url: 'http://sut-norilsk.ru/%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B8-powertech-2024-%D0%B2%D0%B5%D1%80%D0%BD%D1%83%D0%BB%D0%B8%D1%81%D1%8C-%D1%81%D0%BE-%D1%89%D0%B8%D1%82%D0%BE%D0%BC/'
+    date: '2024-12-18'
+    icon: trophy
+    summary: |
+      Third place at the PowerTech STEAM-Star International Invitational Contest in Taipei, Taiwan.
